@@ -1,10 +1,9 @@
 {
   "name": "@ianwalter/web-ext-webpack-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Webpack plugin for web-ext",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "files": [
     "index.js"
   ],
