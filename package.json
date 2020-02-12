@@ -25,7 +25,7 @@
   "homepage": "https://github.com/ianwalter/web-ext-webpack-plugin#readme",
   "dependencies": {
     "@ianwalter/release": "^5.0.0",
-    "web-ext": "^4.0.0"
+    "web-ext": "^4.1.0"
   },
   "devDependencies": {
     "@ianwalter/bff": "^9.2.1",
