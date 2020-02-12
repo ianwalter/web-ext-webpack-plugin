@@ -5,7 +5,7 @@ const pluginName = 'WebExtWebpackPlugin'
 
 class WebExtWebpackPlugin {
   constructor ({
-    sourceDir = process.cwd(),
+    sourceDir = path.join(process.cwd(), 'dist'),
     artifactsDir = path.join(sourceDir, 'web-ext-artifacts'),
     browserConsole = false,
     firefox,
