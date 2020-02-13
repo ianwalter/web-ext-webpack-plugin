@@ -333,7 +333,7 @@
     marked-terminal "^3.3.0"
     strip-ansi "^6.0.0"
 
-"@ianwalter/print@^5.0.0":
+"@ianwalter/print@^5.0.0", "@ianwalter/print@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-5.1.0.tgz#52c5b727a24088ae3354f34c8147761053bc907f"
   integrity sha512-hthgIc5l98Az6TS1m2SzAzjWtVwrAdBBJvW8uhtvq+awekelri5s4yoKNLkZAjHRJSM7gyXX+IK/ttISzkiOUA==

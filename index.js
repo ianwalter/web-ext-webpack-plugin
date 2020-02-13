@@ -1,25 +1,29 @@
 const path = require('path')
 const webExt = require('web-ext').default
+const { print } = require('@ianwalter/print')
 
 const pluginName = 'WebExtWebpackPlugin'
 
 class WebExtWebpackPlugin {
   constructor ({
-    sourceDir = path.join(process.cwd(), 'dist'),
-    artifactsDir = path.join(sourceDir, 'web-ext-artifacts'),
-    browserConsole = false,
-    firefox,
-    firefoxProfile,
-    startUrl
+    sourceDir = process.cwd(),
+    artifactsDir = path.join(sourceDir, 'dist'),
+    lint = {
+      artifactsDir,
+      boring: false,
+      metadata: false,
+      output: 'text',
+      pretty: false,
+      sourceDir,
+      verbose: false,
+      warningsAsErrors: true
+    },
+    ...rest
   } = {}) {
     this.runner = null
     this.watchMode = false
-    this.artifactsDir = artifactsDir
-    this.browserConsole = browserConsole
-    this.firefox = firefox
-    this.firefoxProfile = firefoxProfile
-    this.sourceDir = sourceDir
-    this.startUrl = startUrl
+    this.options = { sourceDir, artifactsDir, ...rest }
+    this.lintOptions = lint
   }
 
   apply (compiler) {
@@ -29,19 +33,7 @@ class WebExtWebpackPlugin {
 
     const afterEmit = async compilation => {
       try {
-        await webExt.cmd.lint(
-          {
-            artifactsDir: this.artifactsDir,
-            boring: false,
-            metadata: false,
-            output: 'text',
-            pretty: false,
-            sourceDir: this.sourceDir,
-            verbose: false,
-            warningsAsErrors: true
-          },
-          { shouldExitProgram: false }
-        )
+        await webExt.cmd.lint(this.lintOptions, { shouldExitProgram: false })
 
         if (!this.watchMode) {
           return
@@ -52,28 +44,15 @@ class WebExtWebpackPlugin {
           return
         }
 
-        await webExt.cmd.run(
-          {
-            artifactsDir: this.artifactsDir,
-            browserConsole: this.browserConsole,
-            sourceDir: this.sourceDir,
-            firefox: this.firefox,
-            firefoxProfile: this.firefoxProfile,
-            startUrl: this.startUrl,
-            noReload: true
-          },
-          {}
-        ).then(runner => (this.runner = runner))
+        await webExt.cmd.run(this.options, {}).then(r => (this.runner = r))
 
         if (!this.runner) {
           return
         }
 
-        this.runner.registerCleanup(() => {
-          this.runner = null
-        })
+        this.runner.registerCleanup(() => (this.runner = null))
       } catch (err) {
-        console.log(err)
+        print.err(err)
       }
     }
 
