@@ -183,18 +183,19 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/base-error/-/base-error-6.1.0.tgz#a25f8a57e04877f6823251c5f1e05c7c060a0130"
   integrity sha512-a1oe3gdY7aVJotysd2hbkARZdIXd80b1xL+kcJGQ/5VzEv7bMhQ+vlamv8DLz828uz/dxMCVb4++n75RyVUs2Q==
 
-"@ianwalter/bff@^9.2.1":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.2.1.tgz#7076c0716374f908ed01e92014f2d492d8aed995"
-  integrity sha512-NGzZmBZO2fBgBiNWGNBk3aSGzL8iEm8q2at6PulIwupiuhEaA36VKtbNjuFE3WxN1aYQpSpX9Oy1c30v/rV2Zg==
+"@ianwalter/bff@^9.4.1":
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.4.1.tgz#26757f51f959e5b0ee8d70eda641de048ce2da46"
+  integrity sha512-fJGpf2m/9bGPDWnDW+6xacb7J4wTfBLNE9OndrUAk9LoAh4Ywdje+xZUzPCMwtelRQ5Emov3/ec7LIcQgbDY2g==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
-    "@ianwalter/clone" "^4.1.0"
+    "@ianwalter/clone" "^5.0.0"
     "@ianwalter/cloneable" "^1.0.1"
-    "@ianwalter/print" "^5.0.0"
+    "@ianwalter/print" "^5.1.0"
     "@ianwalter/subpub" "^2.0.0"
     "@ianwalter/timer" "^1.1.0"
     callsites "^3.1.0"
+    camaro "^4.1.2"
     common-tags "^1.8.0"
     expect "^25.1.0"
     globby "^11.0.0"
@@ -1231,6 +1232,11 @@ callsites@^3.0.0, callsites@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
+
+camaro@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/camaro/-/camaro-4.1.2.tgz#69a8d89f7fb524f9ee79cfb137e27645b26072eb"
+  integrity sha512-pogQ/I2Ijr4Z+hNoCjgBzw9S/6PZkqDNK9UMAcietgUHVZ4Lw2bq8SkfHonqIYW+bDjk6VBNm+XkURrf6iaLAQ==
 
 camelcase@5.3.1, camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
