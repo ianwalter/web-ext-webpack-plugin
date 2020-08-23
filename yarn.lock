@@ -260,10 +260,20 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-5.0.0.tgz#d5e20f3b9eccfbbb094f6f38e1cf6d31818b51ac"
   integrity sha512-N0BlOwYog4ASu2OP+9q2xM3fvJDtFm4YhhZG2dmn0rmueJGhqC/OSJIHgixL6wORDP0w9+sRJdI97b0IoWBdYw==
 
+"@ianwalter/clone@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-6.0.1.tgz#b24e7ae22a8682c58e2ab23061dbc3b288466fad"
+  integrity sha512-3dCmuxyyZKUPM7kFI2sf7WxQli7KL6FisH9uOtcGvjmvHOwKW+NHXVwCTD4xfrxEGhu4eAKwO0BN9f8V0YYAKQ==
+
 "@ianwalter/cloneable@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-1.0.1.tgz#627489e86020f035559b263762e1ff6329b8c08e"
   integrity sha512-1+SjoHTyEMK/UB4ASZpQdArMk2K3RlSptbG0GVeNXLfWeo5H+RdTbhcEk4GUYKEf3SskIXYrS8FvtL02d/6D+g==
+
+"@ianwalter/cloneable@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-2.0.0.tgz#afe88576cf08e17825509c68185cd7da61354dad"
+  integrity sha512-ZMKux34x/+EJIc6RCu01MmFXbW1rDSCCHvL9Bu81Hy/QGwvYu/lJACXWEbiCC/q7kDfVhA8LWNcLeMsp7G5a/A==
 
 "@ianwalter/commits@^1.0.1":
   version "1.0.1"
@@ -274,6 +284,11 @@
     "@ianwalter/print" "^4.0.0"
     execa "^3.4.0"
     strip "^3.0.0"
+
+"@ianwalter/dot@^1.0.4":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.5.tgz#060c24e9e3ea22f03d03a0f0a1434e18ada079b2"
+  integrity sha512-xOtXmoeKrLudrNF5noqJPXJkMtm33A/Hhy/UPV0z5pWCtPa8pN1b5NFgrsFZsA/UsUN47MKWjLazPuZIO77ljw==
 
 "@ianwalter/eslint-config@^4.0.0":
   version "4.0.0"
@@ -302,6 +317,11 @@
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-5.0.0.tgz#972b3cd668ab87416fba1af99186cd83d34d687f"
   integrity sha512-Z+Xn8dT0ApkjGizdwMQaCgsAyHO+zKhCC2OYO7lEYLs1IdCzXtRUYah3vkIWT8/Ad94ni0rxtR39VTRWJE1/Qw==
+
+"@ianwalter/merge@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-9.0.1.tgz#bbbf15e1daec5fef7e28633d9e8060a62018a72d"
+  integrity sha512-Wu7eAZEsfuW0FJsVsdsNaWAtlY/6Viy74HQpZ8A81KutjhNO5cyPRkiBGletuX9kDUTOdSwWJokPnu/o4yE3KA==
 
 "@ianwalter/print@^3.9.0":
   version "3.9.0"
@@ -348,6 +368,24 @@
     has-emoji "^1.1.0"
     marked "^0.8.0"
     marked-terminal "^4.0.0"
+    strip-ansi "^6.0.0"
+
+"@ianwalter/print@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.1.0.tgz#5358b9c0a93a01451bb6c18a9a241a360556eb4a"
+  integrity sha512-1C3oH2YYpfPsRELDK2GDLEyzUNqBu4RMFrkbL+IFG5QrigAKX0wC64gjcmXkgGI9wGUEQ0R3vjnR/yMzC+Yymw==
+  dependencies:
+    "@ianwalter/chromafi" "^1.0.1"
+    "@ianwalter/cli" "^4.1.0"
+    "@ianwalter/clone" "^6.0.1"
+    "@ianwalter/cloneable" "^2.0.0"
+    "@ianwalter/dot" "^1.0.4"
+    "@ianwalter/merge" "^9.0.1"
+    chalk "^4.1.0"
+    has-ansi "^4.0.0"
+    has-emoji "^1.1.0"
+    marked "^1.1.1"
+    marked-terminal "^4.1.0"
     strip-ansi "^6.0.0"
 
 "@ianwalter/release@^5.0.0":
@@ -739,6 +777,13 @@ ansi-escapes@^4.2.1, ansi-escapes@^4.3.0:
   integrity sha512-EiYhwo0v255HUL6eDyuLrXEkTi7WwVCLAw+SeOQ7M7qdun1z1pum4DEm/nuqIVbPvi9RPPc9k9LbyBv6H0DwVg==
   dependencies:
     type-fest "^0.8.1"
+
+ansi-escapes@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.1.tgz#a5c47cc43181f1f38ffd7076837700d395522a61"
+  integrity sha512-JWF7ocqNrp8u9oqpgV+wH5ftbt+cfvv+PTjOvKLT3AdYly/LmORARfEVT1iyjwN+4MqE5UmVKoAdIBqeoCHgLA==
+  dependencies:
+    type-fest "^0.11.0"
 
 ansi-mark@^1.0.0:
   version "1.0.4"
@@ -1295,6 +1340,14 @@ chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
+
+chalk@^4.0.0, chalk@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
+  integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
 
 chardet@^0.7.0:
   version "0.7.0"
@@ -4131,6 +4184,18 @@ marked-terminal@^4.0.0:
     node-emoji "^1.10.0"
     supports-hyperlinks "^2.0.0"
 
+marked-terminal@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/marked-terminal/-/marked-terminal-4.1.0.tgz#01087372d3636dc7cb286475a1d6147187f500e0"
+  integrity sha512-5KllfAOW02WS6hLRQ7cNvGOxvKW1BKuXELH4EtbWfyWgxQhROoMxEvuQ/3fTgkNjledR0J48F4HbapvYp1zWkQ==
+  dependencies:
+    ansi-escapes "^4.3.1"
+    cardinal "^2.1.1"
+    chalk "^4.0.0"
+    cli-table "^0.3.1"
+    node-emoji "^1.10.0"
+    supports-hyperlinks "^2.1.0"
+
 marked@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.7.0.tgz#b64201f051d271b1edc10a04d1ae9b74bb8e5c0e"
@@ -4140,6 +4205,11 @@ marked@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.8.0.tgz#ec5c0c9b93878dc52dd54be8d0e524097bd81a99"
   integrity sha512-MyUe+T/Pw4TZufHkzAfDj6HarCBWia2y27/bhuYkTaiUnfDYFnCP3KUN+9oM7Wi6JA2rymtVYbQu3spE0GCmxQ==
+
+marked@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-1.1.1.tgz#e5d61b69842210d5df57b05856e0c91572703e6a"
+  integrity sha512-mJzT8D2yPxoPh7h0UXkB+dBj4FykPJ2OIfxAWeIHrvoHDkFxukV/29QxoFQoPM6RLEwhIFdJpmKBlqVM3s2ZIw==
 
 marky@^1.2.0:
   version "1.2.1"
@@ -5930,7 +6000,7 @@ supports-hyperlinks@^1.0.1:
     has-flag "^2.0.0"
     supports-color "^5.0.0"
 
-supports-hyperlinks@^2.0.0:
+supports-hyperlinks@^2.0.0, supports-hyperlinks@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/supports-hyperlinks/-/supports-hyperlinks-2.1.0.tgz#f663df252af5f37c5d49bbd7eeefa9e0b9e59e47"
   integrity sha512-zoE5/e+dnEijk6ASB6/qrK+oYdm2do1hjoLWrqUC/8WEIW1gbxFcKuBof7sW8ArN6e+AYvsE8HBGiVRWL/F5CA==
@@ -6138,6 +6208,11 @@ type-detect@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
+
+type-fest@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
+  integrity sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==
 
 type-fest@^0.4.1:
   version "0.4.1"
