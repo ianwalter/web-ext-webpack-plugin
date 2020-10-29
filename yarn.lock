@@ -367,10 +367,10 @@
     prompts "^2.3.0"
     semver "^7.1.1"
 
-"@ianwalter/renovate-config@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.2.0.tgz#f84e2fc56ad5d29c0876058c16c25db95baf74a9"
-  integrity sha512-OSvziSdR0gxnWeH+9KbS9+HjojFa73vqNFU7wAxWs2ZV/9YofpKw0HwGtzyYgb1xVk8g6ZFPMYaTnFZ4Af6N/w==
+"@ianwalter/renovate-config@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.4.2.tgz#f8044e1ee89adcaa193aff45618f86ff6f38c977"
+  integrity sha512-zsqqCE28FwCvBbXmDQgCwnGa5R1HEiNaMZD4QUwdVuycMT1xtv1TDAj4YiP878M4jgiU83iY1BdUXtjkpxu/Tw==
 
 "@ianwalter/subpub@^2.0.0":
   version "2.0.0"
