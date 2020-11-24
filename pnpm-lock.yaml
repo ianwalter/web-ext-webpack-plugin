@@ -6641,5 +6641,5 @@ specifiers:
   '@ianwalter/bff': ^9.4.1
   '@ianwalter/eslint-config': ^6.0.0
   '@ianwalter/print': ^5.1.0
-  '@ianwalter/renovate-config': ^1.2.0
+  '@ianwalter/renovate-config': ^1.4.2
   web-ext: ^4.1.0
