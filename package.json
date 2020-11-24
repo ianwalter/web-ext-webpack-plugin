@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A Webpack plugin for web-ext",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint ."
+  },
   "files": [
     "index.js"
   ],
