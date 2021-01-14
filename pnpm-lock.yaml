@@ -3,7 +3,7 @@ dependencies:
   '@ianwalter/print': 5.3.0
   web-ext: 4.3.0
 devDependencies:
-  '@changesets/cli': 2.12.0
+  '@changesets/cli': 2.13.0
   '@ianwalter/bff': 10.0.1
   '@ianwalter/eslint-config': 6.2.0
   '@ianwalter/renovate-config': 1.4.2
@@ -28,7 +28,7 @@ packages:
     dependencies:
       core-js: 2.6.11
       regenerator-runtime: 0.13.7
-    deprecated: "\U0001F6A8 This package has been deprecated in favor of separate inclusion of a polyfill and regenerator-runtime (when needed). See the @babel/polyfill docs (https://babeljs.io/docs/en/babel-polyfill) for more information."
+    deprecated: 🚨 This package has been deprecated in favor of separate inclusion of a polyfill and regenerator-runtime (when needed). See the @babel/polyfill docs (https://babeljs.io/docs/en/babel-polyfill) for more information.
     dev: false
     resolution:
       integrity: sha512-/TS23MVvo34dFmf8mwCisCbWGrfhbiWZSwBo6HkADTBhUa2Q/jWltyY/tpofz/b6/RIhqaqQcquptCirqIhOaQ==
@@ -69,7 +69,7 @@ packages:
       '@babel/runtime': 7.12.5
       '@changesets/config': 1.4.0
       '@changesets/get-version-range-type': 0.3.2
-      '@changesets/git': 1.0.6
+      '@changesets/git': 1.1.0
       '@changesets/types': 3.2.0
       '@manypkg/get-packages': 1.1.1
       detect-indent: 6.0.0
@@ -93,7 +93,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1UqJpX5Tj2kGtcI3anG3vsLFfX6na5fLsPaxwgS7T/zt1jJ1hv0cMC+iP6fd9BuCHvcFn22GT74bcRaVnAvm3Q==
-  /@changesets/cli/2.12.0:
+  /@changesets/cli/2.13.0:
     dependencies:
       '@babel/runtime': 7.12.5
       '@changesets/apply-release-plan': 4.1.0
@@ -102,7 +102,7 @@ packages:
       '@changesets/errors': 0.1.4
       '@changesets/get-dependents-graph': 1.1.3
       '@changesets/get-release-plan': 2.0.1
-      '@changesets/git': 1.0.6
+      '@changesets/git': 1.1.0
       '@changesets/logger': 0.0.5
       '@changesets/pre': 1.0.5
       '@changesets/read': 0.4.6
@@ -128,7 +128,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-dGdFkg75zsaEObsG8gwMLglS6sJVjXWwgVTAzEIjqIoWVnKwqZqccTb4gn0noq47uCwy7SqxiAJqGibIy9UOKw==
+      integrity: sha512-z5b2CkubunWkT5jtGLIioz6swhsSd9ks7cxQNrf721JE3cr2si+Qy/3Zrw9jfbQTHheionD3LAEsc6wauZg3WQ==
   /@changesets/config/1.4.0:
     dependencies:
       '@changesets/errors': 0.1.4
@@ -173,7 +173,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-SVqwYs5pULYjYT4op21F2pVbcrca4qA/bAA3FmFXKMN7Y+HcO8sbZUTx3TAy2VXulP2FACd1aC7f2nTuqSPbqg==
-  /@changesets/git/1.0.6:
+  /@changesets/git/1.1.0:
     dependencies:
       '@babel/runtime': 7.12.5
       '@changesets/errors': 0.1.4
@@ -183,7 +183,7 @@ packages:
       spawndamnit: 2.0.0
     dev: true
     resolution:
-      integrity: sha512-e0M06XuME3W5lGhz+CO0vLc60u+hLk/pYjOx/6GXEWuQrwtGgeycFIfRgRt8qTs664o1oKtVHBbd7ItpoWgFfA==
+      integrity: sha512-f/2rQynT+JiAL/V0V/GQdXhLkcb86ELg3UwH3fQO4wVdfUbE9NHIHq9ohJdH1Ymh0Lv48F/b38aWZ5v2sKiF3w==
   /@changesets/logger/0.0.5:
     dependencies:
       chalk: 2.4.2
@@ -210,7 +210,7 @@ packages:
   /@changesets/read/0.4.6:
     dependencies:
       '@babel/runtime': 7.12.5
-      '@changesets/git': 1.0.6
+      '@changesets/git': 1.1.0
       '@changesets/logger': 0.0.5
       '@changesets/parse': 0.3.7
       '@changesets/types': 3.2.0
@@ -1625,7 +1625,7 @@ packages:
     resolution:
       integrity: sha512-EZD2ckZysv8MMt4J6HSvS9K2GdtlZtdBncKAmF9lr2n0c9dJUaUN88PSTjvgwCgQPWKTkERXITgS6JJRAnljtg==
   /core-js/2.6.11:
-    deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
+    deprecated: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
     dev: false
     requiresBuild: true
     resolution:
@@ -5356,7 +5356,7 @@ packages:
       tough-cookie: 2.4.3
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: false
     engines:
       node: '>= 4'
@@ -5384,7 +5384,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: false
     engines:
       node: '>= 6'
@@ -5410,7 +5410,7 @@ packages:
     resolution:
       integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
   /resolve-url/0.2.1:
-    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    deprecated: https://github.com/lydell/resolve-url#deprecated
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
   /resolve/1.19.0:
@@ -6392,7 +6392,7 @@ packages:
     resolution:
       integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   /urix/0.1.0:
-    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
+    deprecated: Please see https://github.com/lydell/urix#deprecated
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
   /url-parse-lax/3.0.0:
@@ -6739,7 +6739,7 @@ packages:
     resolution:
       integrity: sha1-qLxF9MG0lpnGuQGYuqyqzbzUugQ=
 specifiers:
-  '@changesets/cli': ^2.12.0
+  '@changesets/cli': ^2.13.0
   '@generates/logger': ^0.0.8
   '@ianwalter/bff': ^10.0.1
   '@ianwalter/eslint-config': ^6.2.0
