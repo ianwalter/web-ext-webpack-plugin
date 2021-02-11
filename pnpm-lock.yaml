@@ -6,7 +6,7 @@ devDependencies:
   '@changesets/cli': 2.14.1
   '@ianwalter/bff': 10.0.5
   '@ianwalter/eslint-config': 6.2.0
-  '@ianwalter/renovate-config': 1.4.3
+  '@ianwalter/renovate-config': 1.4.4
 lockfileVersion: 5.2
 packages:
   /@assemblyscript/loader/0.10.1:
@@ -511,10 +511,10 @@ packages:
       strip-ansi: 6.0.0
     resolution:
       integrity: sha512-YkkUv/Bnwzu0qNqj3BCo1ZP19wk2kkYXYhFvgKGZqVpELRHEwOzo5pD4KszwhjvMUNiBOLYqOZO8C3OCx5+cXA==
-  /@ianwalter/renovate-config/1.4.3:
+  /@ianwalter/renovate-config/1.4.4:
     dev: true
     resolution:
-      integrity: sha512-61InLaz89GLb3iTcRSL2Z+WtYnEIfzWJ7gy+R8ascdsRpARU8qwkBqmq6euw8OPxfHNbqtqEAiG1ljckFjVwsQ==
+      integrity: sha512-LJRn/jAwIrUWfH5gwibOsUVQeXJVnPhoML0Yybx4xKvowyIKY2nwzvXvR1xPa2zK4EH+EW7WeQ/+Z1vctp67XA==
   /@ianwalter/sleep/0.0.1:
     dev: true
     resolution:
@@ -6737,5 +6737,5 @@ specifiers:
   '@ianwalter/bff': ^10.0.5
   '@ianwalter/eslint-config': ^6.2.0
   '@ianwalter/print': ^5.1.0
-  '@ianwalter/renovate-config': ^1.4.3
+  '@ianwalter/renovate-config': ^1.4.4
   web-ext: ^4.1.0
