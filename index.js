@@ -1,8 +1,9 @@
 const path = require('path')
 const webExt = require('web-ext').default
-const { print } = require('@ianwalter/print')
+const { createLogger } = require('@generates/logger')
 
 const pluginName = 'WebExtWebpackPlugin'
+const logger = createLogger({ level: 'info', namespace: 'WebExtWebpack' })
 
 class WebExtWebpackPlugin {
   constructor ({
@@ -52,7 +53,7 @@ class WebExtWebpackPlugin {
 
         this.runner.registerCleanup(() => (this.runner = null))
       } catch (err) {
-        print.err(err)
+        logger.err(err)
       }
     }
 

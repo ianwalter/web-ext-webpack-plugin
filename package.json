@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A Webpack plugin for web-ext",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint ."
+  },
   "files": [
     "index.js"
   ],
@@ -24,14 +26,15 @@
   },
   "homepage": "https://github.com/ianwalter/web-ext-webpack-plugin#readme",
   "dependencies": {
+    "@generates/logger": "^0.0.8",
     "@ianwalter/print": "^5.1.0",
-    "@ianwalter/release": "^5.0.0",
-    "web-ext": "^4.1.0"
+    "web-ext": "^4.3.0"
   },
   "devDependencies": {
-    "@ianwalter/bff": "^9.4.1",
-    "@ianwalter/eslint-config": "^4.0.0",
-    "@ianwalter/renovate-config": "^1.2.0"
+    "@changesets/cli": "^2.14.1",
+    "@ianwalter/bff": "^10.0.5",
+    "@ianwalter/eslint-config": "^6.2.0",
+    "@ianwalter/renovate-config": "^1.4.3"
   },
   "eslintConfig": {
     "root": true,
