@@ -28,7 +28,7 @@
   "dependencies": {
     "@generates/logger": "^0.0.8",
     "@ianwalter/print": "^5.1.0",
-    "web-ext": "^4.1.0"
+    "web-ext": "^7.6.2"
   },
   "devDependencies": {
     "@changesets/cli": "^2.14.1",
